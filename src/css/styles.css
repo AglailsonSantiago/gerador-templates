@@ -48,7 +48,7 @@ main {
   width: 50px;
   height: 50px;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 #user_infos {
@@ -157,11 +157,156 @@ main {
 }
 
 #sidebar.open-sidebar .item-description {
-  width: 150px;
+  width: 165px;
   height: auto;
 }
 
 #sidebar.open-sidebar .side-item a {
   justify-content: flex-start;
   gap: 14px;
+}
+
+.overlay-modal-experiencias {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(32, 89, 133, 0.514);
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 99999;
+}
+
+.overlay-modal-experiencias.active {
+  display: flex;
+}
+
+.overlay-modal-experiencias .modal {
+  width: 70%;
+  height: 80%;
+
+  color: #0a0a0a;
+  background-color: #e3e9f7;
+  padding: 20px;
+
+  border: 2px solid #393a3b;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay-modal-experiencias .modal .modal-title {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid #393a3b;
+
+  padding-bottom: 10px;
+}
+
+.overlay-modal-experiencias .modal .modal-title .fechar-modal {
+  height: 24px;
+  width: 24px;
+
+  color: #ffffff;
+  background-color: #8b0909;
+
+  border: none;
+
+  outline: none;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.overlay-modal-experiencias .modal .modal-title .fechar-modal:hover {
+  color: white;
+  background-color: #ec0808;
+}
+
+.overlay-modal-formacoes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(61, 54, 37, 0.514);
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 99999;
+}
+
+.overlay-modal-formacoes.active {
+  display: flex;
+}
+
+.overlay-modal-formacoes .modal {
+  width: 500px;
+  height: 400px;
+
+  background: var(--bg-url) no-repeat top center/cover;
+
+  color: #e4e6eb;
+
+  padding: 20px;
+
+  border: 2px solid #393a3b;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay-modal-formacoes .modal .modal-title {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid #393a3b;
+
+  padding-bottom: 10px;
+}
+
+.overlay-modal-formacoes .modal .modal-title .fechar-modal {
+  height: 24px;
+  width: 24px;
+
+  color: #8b0909;
+  background-color: white;
+
+  border: none;
+
+  outline: none;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.overlay-modal-formacoes .modal .modal-title .fechar-modal:hover {
+  color: white;
+  background-color: #8b0909;
+}
+
+.conteudo-modal {
+  overflow-y: scroll;
+}
+
+.conteudo-modal ul li p {
+  text-align: justify;
+  margin: 10px;
 }

@@ -10,6 +10,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/src/images/support2.png"
+    />
     <link rel="stylesheet" href="src/css/styles.css" />
     <title>Gerador de Template</title>
   </head>
@@ -17,7 +22,7 @@
     <nav id="sidebar">
       <div id="sidebar_content">
         <div id="user">
-          <img src="src/images/support.png" id="user_avatar" alt="Avatar" />
+          <img src="src/images/support2.png" id="user_avatar" alt="Avatar" />
 
           <p id="user_infos">
             <span class="item-description"> Fulano de Tal </span>
@@ -25,8 +30,8 @@
           </p>
         </div>
 
-        <ul id="side_items">
-          <li class="side-item active">
+        <ul id="side_items" class="side-items">
+          <li class="side-item">
             <a href="#">
               <i class="fa-solid fa-chart-line"></i>
               <span class="item-description"> Dashboard </span>
@@ -34,37 +39,37 @@
           </li>
 
           <li class="side-item">
-            <a href="#">
-              <i class="fa-solid fa-user"></i>
-              <span class="item-description"> Usuários </span>
+            <a href="#" class="botao-chamado-local">
+              <i class="fa-solid fa-wrench"></i>
+              <span class="item-description"> Chamado Local </span>
             </a>
           </li>
 
           <li class="side-item">
-            <a href="#">
-              <i class="fa-solid fa-bell"></i>
-              <span class="item-description"> Notificações </span>
+            <a href="#" class="botao-chamado-local">
+              <i class="fa-solid fa-phone"></i>
+              <span class="item-description"> Chamado Remoto </span>
             </a>
           </li>
 
           <li class="side-item">
-            <a href="#">
-              <i class="fa-solid fa-box"></i>
-              <span class="item-description"> Produtos </span>
+            <a href="#" class="botao-chamado-local">
+              <i class="fa-solid fa-exclamation-triangle"></i>
+              <span class="item-description"> Strikes </span>
             </a>
           </li>
 
           <li class="side-item">
-            <a href="#">
-              <i class="fa-solid fa-image"></i>
-              <span class="item-description"> Imagens </span>
+            <a href="#" class="botao-chamado-local">
+              <i class="fa-solid fa-retweet"></i>
+              <span class="item-description"> Troca de equipamento </span>
             </a>
           </li>
 
           <li class="side-item">
-            <a href="#">
-              <i class="fa-solid fa-gear"></i>
-              <span class="item-description"> Configurações </span>
+            <a href="#" class="botao-chamado-local">
+              <i class="fa-solid fa-sticky-note"></i>
+              <span class="item-description"> Laudo técnico </span>
             </a>
           </li>
         </ul>
@@ -83,6 +88,23 @@
     </nav>
 
     <main></main>
+
+    <div class="overlay-modal-experiencias">
+      <div class="modal">
+        <div class="modal-title">
+          <strong><i class="fa-solid fa-wrench"></i>
+            &nbsp; Chamado Local</strong>
+          <button class="fechar-modal">
+            <i class="fa-solid fa-times"></i>
+          </button>
+        </div>
+
+        <div class="conteudo-modal">
+        </div>
+      </div>
+    </div>
+
+
     <script src="src/javascript/script.js"></script>
   </body>
 </html>
